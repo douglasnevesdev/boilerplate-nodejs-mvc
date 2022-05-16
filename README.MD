@@ -71,3 +71,4 @@ yarn add mongoose
 - Aproveitamos o recurso de emit do express para deixar a aplicação executar somente se conseguir comunicação com o banco de dados mongodb.
 - Criamos o arquivo .env na raiz do projeto.
 - Adiconamos .env no .gitignore.
+- Criamos nossos modelos baseados ao schema do mongodb.
