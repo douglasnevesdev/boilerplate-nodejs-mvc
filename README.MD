@@ -61,5 +61,8 @@ yarn add style-loader
 - O backend executa os arquivos dentro da pasta src e carrega as rotas do express.
 - A rota principal (backend) invoca a view index.ejs (que tambem esta no backend) que carrega o arquivo da pasta public bundle.js (gerado pelo webpack).
 - O arquivo bundle.js que esta na pasta public é gerado pelo webpack, ou seja, é resultado da compilação da pasta frontend que tambem esta no projeto.
+- Basicamente o webpack compila a pasta frontend do projeto para a pasta public aonde sera utilizada pelo backend quando o usuario acessar a rota que invoca a view.
 
 # Continuando os Processos
+
+- Adicionamos o middleware global para ser utilizado caso tenha necessidade.
