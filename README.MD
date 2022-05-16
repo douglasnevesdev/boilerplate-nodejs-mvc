@@ -5,12 +5,6 @@ yarn init -y
 yarn add express
 yarn add nodemon
 yarn add ejs
-yarn add @babel/cli
-yarn add @babel/core
-yarn add @babel/preset-env
-yarn add babel-loader
-yarn add webpack
-yarn add webpack-cli
 ```
 
 # Processos
@@ -66,3 +60,14 @@ yarn add style-loader
 # Continuando os Processos
 
 - Adicionamos o middleware global para ser utilizado caso tenha necessidade.
+- Instalamos o dotenv para utilizar variaveis de ambiente.
+- Instalar o mongoose para gerenciar o banco de dados.
+
+```javascript
+yarn add dotenv
+yarn add mongoose
+```
+
+- Aproveitamos o recurso de emit do express para deixar a aplicação executar somente se conseguir comunicação com o banco de dados mongodb.
+- Criamos o arquivo .env na raiz do projeto.
+- Adiconamos .env no .gitignore.
