@@ -20,3 +20,4 @@ yarn add ejs
 - Criar pasta views
   - Adicionar no index.js no express o set para adicionar a view.
   - Adicionar o EJS (Engine igual HTML + Com mais recursos) como engine de view.
+- Criar pasta public para arquivos estaticos.
