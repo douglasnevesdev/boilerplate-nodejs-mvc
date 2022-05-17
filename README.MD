@@ -72,3 +72,15 @@ yarn add mongoose
 - Criamos o arquivo .env na raiz do projeto.
 - Adiconamos .env no .gitignore.
 - Criamos nossos modelos baseados ao schema do mongodb.
+- Instalamos 3 bibliotecas auxiliares para tratar as sessões do usuario
+
+```javascript
+yarn add express-session connect-mongo connect-flash
+```
+
+- Instalamos o express-session que permite o express gravar uma sessão do usuario no servidor, porem vamos usar essa biblioteca para salvar os dados no mongodb, dessa forma não teremos problema com memoria, sobrecarga e outros.
+- Instalamos o connect-mongo para arnazenar a sessão que o express gerar no mongoDB.
+- Instalamos o connect-flash que fornece uma funcionalidade para o Express de armazenar mensagens que serão apagadas quando forem exibidas ao usuario.
+- Todas as configurações acima dessa parte de sessão foram realizadas no index.js (arquivo principal do node.js)
+- Para salvar mensagens flash utilize o req.flash('info', "Ola mundo!") e para resgatar a mensagem use console.log(req.flash('info'));
+- O ideal para frontend é usar o React porem nesse projeto deixei tudo sendo fornecido pelo express utilizando o MVC.
