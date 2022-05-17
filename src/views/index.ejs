@@ -1,10 +1,15 @@
 <%- include('includes/head'); %>
   
   <section class="container">
-    <h1>
-      <%= titulo %>
-      <%= umaVariavelLocal %>
-    </h1>
+    <h1>Formulario</h1>
+
+    <form action="/" method="post">
+      <label>Cliente</label>
+      <input type="hidden" name="_csrf" value="<%= csrftoken %>">
+      <input type="text" name="cliente">
+      <button>Submit</button>
+    </form>
+
   </section>
 
   <%- include('includes/footer'); %>

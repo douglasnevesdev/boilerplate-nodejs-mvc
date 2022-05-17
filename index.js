@@ -3,8 +3,13 @@ const express = require('express');
 const app = express();
 const routes = require('./src/routes');
 const path  = require('path');
+const helmet = require('helmet');
+const csrf = require('csurf');
 const mongoose = require('mongoose');
-const { middlewareGlobal } = require('./src/middlewares/middleware');
+const { middlewareGlobal, checkCsrfError, csrfMiddleware} = require('./src/middlewares/middleware');
+
+//Proteção para o express
+app.use(helmet());
 
 //Conexão com banco de dados MongoDB, o Express emite pronto quando conclui o carregamento.
 mongoose.connect(process.env.CONNECTIONSTRING)
@@ -49,8 +54,13 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
 
+//Gera o token para todo formulario utilizar, ou seja, injeta um token aonde precisa, a partir deste momento qualquer envio de formulario sem token gera exception.
+app.use(csrf());
+
+
 //Adicionamos o middleware global.
-app.use(middlewareGlobal);
+app.use(middlewareGlobal, checkCsrfError, csrfMiddleware);
+
 
 //Adicionamos as rotas.
 app.use(routes);

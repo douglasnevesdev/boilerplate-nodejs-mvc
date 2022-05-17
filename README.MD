@@ -88,3 +88,11 @@ yarn add express-session connect-mongo connect-flash
 - Se precisar injetar informações de um middleware no .ejs basta fazer como no exemplo: res.locals.umaVariavelLocal = 'Este é o valor da variavel local'
 - Se tiver duvidas de como usar o .ejs consulte a documentação.
 - Não esquecer que .ejs utiliza os includes para adicionar cabeçalho, rodape entre outros.
+- O express recomenda instalação do helmet, instalamos e utilizamos no projeto, o helmet garante segurança nas rotas, basicamente ele previne que alguem post ou faça quaquer ação de algum site que não seja o fornecido pela aplicação.
+
+```javascript
+yarn add helmet csurf
+```
+
+- Adicionamos acima o csurf que adiciona um token em cada formulario.
+- Desenvolvemos middlewares para gerar os tokens necessarios para os formularios, um middleware para tratamento do erro foi desenvolvido.
