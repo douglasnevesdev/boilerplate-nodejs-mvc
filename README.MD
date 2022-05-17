@@ -96,3 +96,4 @@ yarn add helmet csurf
 
 - Adicionamos acima o csurf que adiciona um token em cada formulario.
 - Desenvolvemos middlewares para gerar os tokens necessarios para os formularios, um middleware para tratamento do erro foi desenvolvido.
+- Concluido
