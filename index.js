@@ -46,6 +46,7 @@ app.use(flash());
 
 //Permite executar formulario/json.
 app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 //Fornece um diretorio estatico, no caso os arquivos que estão dentro de public.
 app.use(express.static(path.resolve(__dirname, 'public')));
