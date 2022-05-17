@@ -84,3 +84,7 @@ yarn add express-session connect-mongo connect-flash
 - Todas as configurações acima dessa parte de sessão foram realizadas no index.js (arquivo principal do node.js)
 - Para salvar mensagens flash utilize o req.flash('info', "Ola mundo!") e para resgatar a mensagem use console.log(req.flash('info'));
 - O ideal para frontend é usar o React porem nesse projeto deixei tudo sendo fornecido pelo express utilizando o MVC.
+- Para adicionar parametro para o ejs, basta mandar como segundo parametro, no caso o primeiro parametro é a pagina .ejs que gostariamos de renderizar e no segundo parametro é o objeto que queremos passar para ser renderizado na pagina.
+- Se precisar injetar informações de um middleware no .ejs basta fazer como no exemplo: res.locals.umaVariavelLocal = 'Este é o valor da variavel local'
+- Se tiver duvidas de como usar o .ejs consulte a documentação.
+- Não esquecer que .ejs utiliza os includes para adicionar cabeçalho, rodape entre outros.
