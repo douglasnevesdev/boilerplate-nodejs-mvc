@@ -2,8 +2,6 @@
   :rocket: Boilerplate NodeJS MVC
 </h2>
 
-<img alt="MVC" title="MVC" src="https://github.com/douglasneves-net/Boilerplate-NodeJS-MVC/blob/main/git/base.png" width="100%" style="max-width: 100%;">
-
 ## :computer: Projeto
 
 <strong>Boilerplate NodeJS MVC</strong> é um projeto Node.js com MVC.
@@ -55,6 +53,9 @@ $ yarn add csurf
 
 ### Front-End Webpack
 - Execute a aplicação: npm start / yarn start
+
+
+<img alt="MVC" title="MVC" src="https://github.com/douglasneves-net/Boilerplate-NodeJS-MVC/blob/main/git/base.png" width="100%" style="max-width: 100%;">
 
 
 # Processos
