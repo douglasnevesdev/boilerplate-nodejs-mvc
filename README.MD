@@ -1,5 +1,3 @@
-<img alt="MVC" title="MVC" src="https://github.com/douglasneves-net/Boilerplate-NodeJS-MVC/blob/main/git/mvc.png" width="100%" style="max-width: 100%;">
-
 <h2 align="center">
   :rocket: Boilerplate NodeJS MVC
 </h2>
