@@ -1,13 +1,53 @@
 <img alt="MVC" title="MVC" src="https://github.com/douglasneves-net/Boilerplate-NodeJS-MVC/blob/main/git/mvc.png" width="100%" style="max-width: 100%;">
 
-# Projeto 
+<h2 align="center">
+  :rocket: Boilerplate NodeJS MVC
+</h2>
 
-```javascript
-yarn init -y
-yarn add express
-yarn add nodemon
-yarn add ejs
+## :computer: Projeto
+
+<strong>Boilerplate NodeJS MVC</strong> é um projeto Node.js com MVC.
+
+O projeto é uma base para construção de sistemas utilizando Node.js com Express e arquitetura MVC.
+
+## :rocket: Tecnologias
+
+### Back-End/Front-End (NodeJS/WebPack)
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/pt-br/)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [EJS](https://ejs.co/)
+- [DotEnv](https://www.npmjs.com/package/dotenv)
+- [Mongoose](https://mongoosejs.com/)
+- [WebPack](https://webpack.js.org/)
+
+
+#### Comandos Back-End/Front-End (NodeJS/WebPack)
+```bash
+$ yarn init -y (Inicio do Projeto)
+$ yarn add express (framework)
+$ yarn add nodemon -D (utilizado para refresh da aplicação apos uma modificação)
+$ yarn add ejs (Utilizado como engine para construção da view)
+$ yarn add @babel/cli (CLI embutida que pode ser usada para compilar arquivos a partir da linha de comando) 
+$ yarn add @babel/core (Pacote principal do babel)
+$ yarn add @babel/preset-env
+$ yarn add babel-loader (Transpila arquivos Javascript usando Babel e Webpack)
+$ yarn add webpack (Empacotador de modulos para javascript)
+$ yarn add webpack-cli (CLI fornece um conjunto flexível de comandos para desenvolvedores )
+$ yarn add core-js
+$ yarn add css-loader,
+$ yarn add regenerator-runtime
+$ yarn add style-loader
+$ yarn add dotenv
+$ yarn add mongoose
+$ yarn add express-session 
+$ yarn add connect-mongo 
+$ yarn add connect-flash
+$ yarn add helmet 
+$ yarn add csurf
 ```
+
+
 
 # Processos
 
@@ -25,24 +65,9 @@ yarn add ejs
 - Criar pasta public para arquivos estaticos.
 - Adicionamos todas as bibliotecas do babel para funcionar com webpack, obs: o Webpack vai ser utilizado para gerar nossa pagina, por isso vamos adicionar no projeto e sera executado em paralelo com o backend, mais os arquivos vão ficar dentro do mesmo projeto.
 
-```javascript
-yarn add @babel/cli
-yarn add @babel/core
-yarn add @babel/preset-env
-yarn add babel-loader
-yarn add webpack
-yarn add webpack-cli
-```
 
 - Adicionamos o arquivo webpack.config.js configurado para o css e gerar o bundle.js final que vai ficar na pasta public.
 - Adicionado os arquivos de dependencias do projeto para o webpack funcionar corretamente.
-
-```javascript
-yarn add core-js
-yarn add css-loader,
-yarn add regenerator-runtime
-yarn add style-loader
-```
 
 - Criar a pasta frontend para separar a aplicação em backend e frontend.
 - Definir no package.json o dev para rodar o nodemon ignorando as pastas frontend e public.
@@ -65,10 +90,6 @@ yarn add style-loader
 - Instalamos o dotenv para utilizar variaveis de ambiente.
 - Instalar o mongoose para gerenciar o banco de dados.
 
-```javascript
-yarn add dotenv
-yarn add mongoose
-```
 
 - Aproveitamos o recurso de emit do express para deixar a aplicação executar somente se conseguir comunicação com o banco de dados mongodb.
 - Criamos o arquivo .env na raiz do projeto.
@@ -76,9 +97,6 @@ yarn add mongoose
 - Criamos nossos modelos baseados ao schema do mongodb.
 - Instalamos 3 bibliotecas auxiliares para tratar as sessões do usuario
 
-```javascript
-yarn add express-session connect-mongo connect-flash
-```
 
 - Instalamos o express-session que permite o express gravar uma sessão do usuario no servidor, porem vamos usar essa biblioteca para salvar os dados no mongodb, dessa forma não teremos problema com memoria, sobrecarga e outros.
 - Instalamos o connect-mongo para arnazenar a sessão que o express gerar no mongoDB.
@@ -92,9 +110,7 @@ yarn add express-session connect-mongo connect-flash
 - Não esquecer que .ejs utiliza os includes para adicionar cabeçalho, rodape entre outros.
 - O express recomenda instalação do helmet, instalamos e utilizamos no projeto, o helmet garante segurança nas rotas, basicamente ele previne que alguem post ou faça quaquer ação de algum site que não seja o fornecido pela aplicação.
 
-```javascript
-yarn add helmet csurf
-```
+
 
 - Adicionamos acima o csurf que adiciona um token em cada formulario.
 - Desenvolvemos middlewares para gerar os tokens necessarios para os formularios, um middleware para tratamento do erro foi desenvolvido.
