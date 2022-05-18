@@ -47,6 +47,14 @@ $ yarn add helmet
 $ yarn add csurf
 ```
 
+## :information_source: Como usar ?
+
+### Back-End NodeJS
+- Instale as dependencias: npm install / yarn
+- Execute a aplicação: npm dev / yarn dev
+
+### Front-End Webpack
+- Execute a aplicação: npm start / yarn start
 
 
 # Processos
