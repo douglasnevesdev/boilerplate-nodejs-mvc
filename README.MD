@@ -24,16 +24,16 @@ O projeto é uma base para construção de sistemas utilizando Node.js com Expre
 
 #### Comandos Back-End/Front-End (NodeJS/WebPack)
 ```bash
-$ yarn init -y (Inicio do Projeto)
-$ yarn add express (framework)
-$ yarn add nodemon -D (utilizado para refresh da aplicação apos uma modificação)
-$ yarn add ejs (Utilizado como engine para construção da view)
-$ yarn add @babel/cli (CLI embutida que pode ser usada para compilar arquivos a partir da linha de comando) 
-$ yarn add @babel/core (Pacote principal do babel)
+$ yarn init -y 
+$ yarn add express 
+$ yarn add nodemon -D 
+$ yarn add ejs 
+$ yarn add @babel/cli 
+$ yarn add @babel/core 
 $ yarn add @babel/preset-env
-$ yarn add babel-loader (Transpila arquivos Javascript usando Babel e Webpack)
-$ yarn add webpack (Empacotador de modulos para javascript)
-$ yarn add webpack-cli (CLI fornece um conjunto flexível de comandos para desenvolvedores )
+$ yarn add babel-loader 
+$ yarn add webpack 
+$ yarn add webpack-cli
 $ yarn add core-js
 $ yarn add css-loader,
 $ yarn add regenerator-runtime
