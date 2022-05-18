@@ -1,4 +1,4 @@
-<img alt="MVC" title="MVC" src="/douglasneves-net/Boilerplate-NodeJS-MVC/blob/main/git/mvc.png" width="100%" style="max-width: 100%;">
+<img alt="MVC" title="MVC" src="https://github.com/douglasneves-net/Boilerplate-NodeJS-MVC/blob/main/git/mvc.png" width="100%" style="max-width: 100%;">
 
 # Projeto 
 
